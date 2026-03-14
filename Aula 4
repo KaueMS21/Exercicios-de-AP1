@@ -1,0 +1,325 @@
+//Kauê Marcos da Silva
+
+//Exercicio 1
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+        System.out.println("===Clendario semanal===");
+        System.out.println("Digite 1 para domingo.");
+        System.out.println("Digite 2 para segunda.");
+        System.out.println("Digite 3 para terça.");
+        System.out.println("Digite 4 para quarta.");
+        System.out.println("Digite 5 para quinta.");
+        System.out.println("Digite 6 para sexta.");
+        System.out.println("Digite 7 para sabado.");
+        System.out.println("===Calendario semanal===");
+
+        int calendario = sc.nextInt();
+
+        switch (calendario){
+
+            case 1:
+                System.out.println("Domingo!");
+                break;
+            case 2:
+                System.out.println("Segunda!");
+                break;
+            case 3:
+                System.out.println("Terça!");
+                break;
+            case 4:
+                System.out.println("Quarta!");
+                break;
+            case 5:
+                System.out.println("Quinta!");
+                break;
+            case 6:
+                System.out.println("Sexta!");
+                break;
+            case 7:
+                System.out.println("Sabado!");
+                break;
+            default:
+                System.out.println("Dia invalido.");
+        }
+        sc.close();
+    }
+}
+
+//Exercicio 2
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+        System.out.println("===Clendario anual===");
+        System.out.println("Digite 1 para janeiro.");
+        System.out.println("Digite 2 para fevereiro.");
+        System.out.println("Digite 3 para março.");
+        System.out.println("Digite 4 para maio.");
+        System.out.println("Digite 5 para abril.");
+        System.out.println("Digite 6 para junho.");
+        System.out.println("Digite 7 para julho.");
+        System.out.println("Digite 8 para agosto.");
+        System.out.println("Digite 9 para setembro.");
+        System.out.println("Digite 10 para outubro.");
+        System.out.println("Digite 11 para novembro.");
+        System.out.println("Digite 12 para dezembro.");
+        System.out.println("===Clendario anual===");
+
+        int calendario = sc.nextInt();
+
+        switch (calendario){
+
+            case 1:
+                System.out.println("Janeiro!");
+                break;
+            case 2:
+                System.out.println("Fevereiro!");
+                break;
+            case 3:
+                System.out.println("Março!");
+                break;
+            case 4:
+                System.out.println("Abril!");
+                break;
+            case 5:
+                System.out.println("Maio!");
+                break;
+            case 6:
+                System.out.println("Junho!");
+                break;
+            case 7:
+                System.out.println("Julho!");
+                break;
+            case 8:
+                System.out.println("Agosto!");
+                break;
+            case 9:
+                System.out.println("Setembro!");
+                break;
+            case 10:
+                System.out.println("Outubro!");
+                break;
+            case 11:
+                System.out.println("Novembro!");
+                break;
+            case 12:
+                System.out.println("Dezembro!");
+                break;
+            default:
+                System.out.println("Mês invalido.");
+        }
+        sc.close();
+    }
+}
+
+//Exercicio 3
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===========================================");
+        System.out.println("Ola aluno(a) a qual periodo você pertence?");
+        System.out.println("M - Matutino.");
+        System.out.println("V - Vespertino.");
+        System.out.println("N - Noturno.");
+        System.out.println("===========================================");
+
+        String periodo = sc.nextLine();
+        switch (periodo) {
+            case "M":
+            case "m":
+                System.out.println("Bom dia!");
+                break;
+
+            case "V":
+            case "v":
+                System.out.println("Boa tarde!");
+                break;
+
+            case "N":
+            case "n":
+                System.out.println("Boa noite!");
+                break;
+        }
+        sc.close();
+    }
+}
+
+// Exercicio 4
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("==============================");
+        System.out.println("Digite seu plano de trabalho:");
+        System.out.println("Plano A.");
+        System.out.println("Plano B.");
+        System.out.println("Plano C.");
+
+        String plano = sc.nextLine();
+
+        System.out.print("Digite seu salario:");
+        double salario = sc.nextDouble();
+        System.out.println("==============================");
+
+        double au10 = salario * 1.10;
+        double au15 = salario * 1.15;
+        double au20 = salario * 1.20;
+
+        switch (plano) {
+
+            case "A":
+            case "a":
+                System.out.println("Seu plano é o (A) corresponde a 10% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au10);
+                break;
+
+            case "B":
+            case "b":
+                System.out.println("Seu plano é o (B) corresponde a 15% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au15);
+                break;
+
+            case "C":
+            case "c":
+                System.out.println("Seu plano é o (C) corresponde a 20% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au20);
+                break;
+
+            default:
+                System.out.println("Plano inválido.");
+        }
+        sc.close();
+    }
+}
+
+
+//Exercicio 5
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float num1, num2, med, dif, prod, div;
+        String opcao; 
+
+        System.out.println("Digite 2 números: ");
+        num1 = sc.nextFloat();
+        num2 = sc.nextFloat();
+
+        System.out.println("\nSelecione a sua opção:");
+        System.out.println("M - Média entre os 2 números.");
+        System.out.println("S - Diferença do maior para o menor.");
+        System.out.println("P - Produto entre os 2 números.");
+        System.out.println("D - Divisão do primeiro pelo segundo.");
+
+       
+        opcao = sc.next().toUpperCase(); 
+
+        switch (opcao) {
+            case "M":
+                med = (num1 + num2) / 2; 
+                System.out.println("A média é: " + med);
+                break;
+
+            case "S":
+                if (num1 >= num2) {
+                    dif = num1 - num2;
+                } else {
+                    dif = num2 - num1;
+                }   
+                System.out.println("A diferença é: " + dif);
+                break;
+            
+            case "P":
+                prod = num1 * num2; 
+                System.out.println("O produto é: " + prod);
+                break;
+            
+            case "D":
+                if (num2 > 0) { 
+                    div = num1 / num2;
+                    System.out.println("A divisão é: " + div);
+                } else {
+                    System.out.println("Erro: Impossível dividir!");
+                }   
+                break;
+                
+            default:
+                System.out.println("Opção inválida!");
+        }
+        sc.close();
+    }
+}
+
+//Exercicio 6
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int codigo, quantidade;
+        double preco = 0;
+        String produto = "";
+
+        System.out.print("Digite o código do produto: ");
+        codigo = sc.nextInt();
+
+        System.out.print("Digite a quantidade desejada: ");
+        quantidade = sc.nextInt();
+
+        switch (codigo) {
+            case 100:
+                produto = "Cachorro Quente";
+                preco = 1.20;
+                break;
+            case 101:
+                produto = "Bauru Simples";
+                preco = 1.30;
+                break;
+            case 102:
+                produto = "Bauru com ovo";
+                preco = 1.50;
+                break;
+            case 103:
+                produto = "Hambúrguer";
+                preco = 1.20;
+                break;
+            case 104:
+                produto = "Cheeseburguer";
+                preco = 1.30;
+                break;
+            case 105:
+                produto = "Refrigerante";
+                preco = 1.00;
+                break;
+            default:
+                System.out.println("Erro: Código inválido!");
+                sc.close();
+                return;
+        }
+
+        double valorTotal = preco * quantidade;
+
+        System.out.println("\n--- Resumo do Pedido ---");
+        System.out.println("Produto: " + produto);
+        System.out.println("Quantidade: " + quantidade);
+        System.out.printf("Valor Total a pagar: R$ %.2f\n", valorTotal);
+
+        sc.close();
+    }
+}
